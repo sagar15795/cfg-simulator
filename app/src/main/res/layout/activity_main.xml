@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Non-Terminal Symbols (V):"
+            android:id="@+id/tv1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Terminal Symbols (E):"
+            android:id="@+id/tv2" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Statrting State (S):"
+        android:id="@+id/tv3" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rules (R):"
+            android:id="@+id/tv4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Note : 'e' represents empty"
+        android:id="@+id/textView"
+        android:layout_gravity="left" />
+
+    <EditText
+            android:id ="@+id/et4"
+            android:layout_width ="match_parent"
+            android:layout_height ="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:hint ="Enter Rules"
+
+            android:scrollHorizontally="false" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="String"
+        android:id="@+id/textView1"
+        android:layout_gravity="left"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id ="@+id/et5"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint ="Enter String to simulate"
+        android:visibility="invisible"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSimulator"
+        android:visibility="invisible"/>
+
+</LinearLayout>
